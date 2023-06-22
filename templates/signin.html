@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/signin.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="fh">
+            <div class="logo">
+                <img src="{{url_for('static',filename='img/logo.png')}}"  alt="Logo" width="117px" height="117px">
+            </div>
+            <div class="name">
+                V-Explore
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sbody">
+        <div class="fsbody">
+            <div class="fsheading">
+                Welcome Back!
+            </div>
+
+            <div class="fscontent">
+                You can login to access with your existing account
+            </div>
+
+            <div class="fslogin">
+                <div class="line">
+
+                </div>
+
+                <div class="loginwith">
+                    or login with
+                </div>
+                <div class="line">
+
+                </div>
+            </div>
+
+            <div class="fsloginicon">
+                <div class="googleicon">
+                    <i class="fa-brands fa-google fa-2xl" style="color: #ffffff;"></i>
+                </div>
+
+                <div class="facebookicon">
+                    <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i>
+                </div>
+                <div class="twittericon">
+                    <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="ssbody">
+            <div class="loginto">
+                Login to Your Account
+            </div>
+            <form method="POST" action="{{url_for('signin')}}" class="ssbody">
+                <div class="username">
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-user fa-2xl" style="color: #ffffff;"></i>
+                    </div> <input type="text" name="username" id="username" placeholder="Username or Email">
+                </div>
+
+                <div class="spassword">
+
+                    <div class="firstelementofpassowrd">
+                        <div class="icon">
+                            <i class="fa-solid fa-lock fa-xl" style="color: #ffffff;"></i>
+                        </div> <input type="password" name="password" id="password" placeholder="Password">
+
+
+
+                    </div>
+                    <div class="icon" id="eyeicon">
+                        <i class="fa-regular fa-eye-slash fa-lg" style="color: #ffffff;"></i>
+                    </div>
+
+                </div>
+                <div class="rememberme">
+                    <div class="remember">
+                        <div class="icon">
+                            <i class="fa-regular fa-square-check fa-xl" style="color: #ffffff;"></i>
+                        </div> Remember me
+                    </div>
+                    <div class="forgotpass">
+                        Forgot Password?
+                    </div>
+                </div>
+
+                <div class="loginbutton">
+                    <input class="loginbutton" type="submit" value="Login">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="createaccount">
+        <div class="newhere">
+            New Here?
+        </div>
+        <div class="Createacc">
+            Create Account
+
+        </div>
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/af27657c8f.js" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+
+.header{
+    width: 100vw;
+    height: 19vh;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-weight: 650;
+    font-size: 36px;
+    margin: 10px; */
+    
+}
+#para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logob{
+    /* margin: 2px; */
+}
+.nameb{
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.headercontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.blogheading{
+    width: 100VW;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+    
+}
+
+.blogcontent{
+    font-size: 40px;
+    font-weight: 650;
+    margin-top: 40px;
+    border-bottom: 2px solid white;
+   
+
+}
+
+.bodyb{
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#more1{
+    display: none;
+}
+#more2{
+    display: none;
+}
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    margin: 20px;
+}
+
+.blog>h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.blog>p{
+    font-size: 18px;
+    max-width: 90vw;
+}

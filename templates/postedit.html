@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Your post</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/postedit.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="headeroutline">
+            <div class="fhpostedit">
+                <div class="logopostedit">
+                    <img src="{{url_for('static',filename='img/bgremovedlogo.png')}}" height="57px" width="57px">
+                </div>
+                <div class="namepostedit">
+                    V-Explore
+                </div>
+            </div>
+            <div class="shpostedit">
+
+                <div class="editbtn">
+                    Build
+                </div>
+                <div class="editbtn">
+                    Pages
+                </div>
+                <div class="editbtn">
+                    Themes
+                </div>
+                <div class="editbtn">
+                    Settings
+                </div>
+                <div class="editbtn">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle " type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Help
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="thpostedit">
+                <div class="preview">
+                   
+                    Preview
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <div class="publish" >
+                    <a href="{{url_for('logout')}}">LogOut</a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="mainbody">
+
+
+        <div>
+            <div class="toolscontainer">
+                <div class="tools">
+                    TOOLS
+                </div>
+                <div class="upperhalf">
+                    <div class="upperhalfbox">
+                        <i class="fa-solid fa-text-height fa"></i>
+                        Text
+                    </div>
+                    <div class="upperhalfbox">
+                        <i class="fa-solid fa-a"></i>Size
+                    </div>
+                    <div class="upperhalfbox">
+                        <i class="fa-solid fa-align-right"></i>Align
+                    </div>
+                    <div class="upperhalfbox">
+                        <div class="icon">
+                            <i class="fa-solid fa-a"></i>
+                        </div>Style
+                    </div>
+                    <div class="upperhalfbox">
+                        <i class="fa-solid fa-brush"></i>Background
+                    </div>
+
+                    <div class="upperhalfbox">
+                        <i class="fa-solid fa-droplet"></i>Colour
+                    </div>
+
+                </div>
+                <div class="middlehalf">
+                    <div class="middlehalfbox">
+                        <i class="fa-solid fa-b"></i>Bold
+                    </div>
+                    <div class="middlehalfbox">
+                        <i class="fa-solid fa-italic"></i>Italic
+                    </div>
+                    <div class="middlehalfbox">
+                        <i class="fa-solid fa-underline"></i>Underline
+                    </div>
+                    <div class="middlehalfbox">
+                        <i class="fa-solid fa-shapes"></i>Shape
+                    </div>
+
+                </div>
+                <div class="lowerhalf">
+                    <div class="lowerhalfbox">
+                        <i class="fa-regular fa-image"></i>Image
+                    </div>
+                    <div class="lowerhalfbox">
+                        <i class="fa-solid fa-circle-play"></i>Video
+                    </div>
+                    <div class="lowerhalfbox">
+                        <i class="fa-brands fa-slideshare"></i>Slideshow
+                    </div>
+                    <div class="lowerhalfbox">
+                        <i class="fa-solid fa-cube"></i>Shadow
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="canvas">
+
+            <div class="writingarea">
+                <form method="POST" action="{{url_for('postedit')}}">
+                    <textarea id="heading" type="heading" name="title" placeholder="Add a heading" cols="40"></textarea>
+                    
+                    <textarea id="notpad" name="body" rows="15" cols="100" placeholder="Write Your Blog Here"></textarea>
+                    <br>
+                    <input type="submit" value="Publish" class="publish" >
+                  </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+<script src="https://kit.fontawesome.com/af27657c8f.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/38.0.1/classic/ckeditor.js"></script>
+
+
+</html>

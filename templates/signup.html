@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/stylesignup.css')}}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="fh">
+            <div class="logo">
+                <img src="{{url_for('static',filename='img/logo.png')}}"  alt="Logo" width="117px" height="117">
+            </div>
+            <div class="name">
+                V-Explore
+            </div>
+        </div>
+
+        <div class="sh">
+            Create Account
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="fb">
+            <div class="content">
+
+                <div class="first box" id="upperbox">
+                    Hello!
+                </div>
+                <div class="second box" id="middlebox">
+                    To keep connected with us please Sign up<br>
+                    with your personal info.
+                </div>
+                <div class="third box" id="downbox">
+                    <div class="icon">
+                        <i class="fa-brands fa-google fa-xl"></i>
+                    </div>
+                    Sign Up with Google
+                </div>
+
+            </div>
+        </div>
+        <form method="POST" action="{{url_for('signup')}}" class="sb">
+
+            <div class="name">
+                <fieldset class="fieldset">
+                    <legend>
+                        First Name
+                    </legend>
+                    <input class="input1" type="text" name="text" id="text" placeholder="">
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend>
+                        Last Name
+                    </legend>
+                    <input class="input1" type="text" name="text" id="text" placeholder="">
+                </fieldset>
+            </div>
+
+            <fieldset class="fieldset" id="email">
+                <legend>
+                    Email
+                </legend>
+                <input class="input1" type="email" name="email" id="email" placeholder="">
+            </fieldset>
+
+            <fieldset class="fieldset" id="password">
+                <legend>
+                    Password
+                </legend>
+                <input class="input1" type="password" name="password" id="password" placeholder="">
+            </fieldset>
+            <div class="createaccount">
+
+                <input class="createaccount" type="submit" value="Create Account">
+            </div>
+
+            <div class="signupwithsocialmedia">
+                <div class="facebook">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="para"> Sign up with FaceBook</div>
+                </div>
+                <div class="twitter">
+
+                    <div class="icon">
+                        <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="para">Sign up with Twitter</div>
+
+
+                </div>
+            </div>
+
+
+
+
+        </form>
+    </div>
+
+    <div class="signin">
+        Arleady have an account? <div class="signbtn">
+            Sign In
+        </div>
+    </div>
+
+
+
+    <!-- <div class="heading">
+            Create Account
+        </div>
+    </div>
+
+    <div class="signup">
+       
+            <br><br>
+           <br><br>
+            <br><br>
+            <br><br>
+           
+          </form>
+       
+    </div> -->
+
+
+
+</body>
+<script src="https://kit.fontawesome.com/af27657c8f.js" crossorigin="anonymous"></script>
+
+</html>

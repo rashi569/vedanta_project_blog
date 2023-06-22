@@ -1,0 +1,473 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    background-color: black;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.header {
+    height: 10vh;
+    width: 100vw;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    margin-top: 3vh;
+    /* font-family:  sans-serif; */
+    /* position: fixed; */
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    flex-wrap: wrap;
+
+}
+
+.fh {
+    height: 10hv;
+    width: 50vw;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-start;
+
+
+
+}
+
+.logo {
+    height: 9vh;
+    width: 8vw;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow:hidden; */
+
+}
+
+.name {
+    height: 9vh;
+    width: 42vw;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.sbody {
+    /* border: 2px solid white; */
+    width: 100vw;
+    height: 80vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+
+}
+
+.fsbody {
+    width: 40vw;
+    height: 60vh;
+    /* border: 2px solid white; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+.ssbody {
+    width: 50vw;
+    height: 70vh;
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+
+}
+
+.loginto {
+    /* border: 2px solid white; */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    font-weight: 700;
+    font-size: 52px;
+    text-align: center;
+
+}
+
+.username input {
+    background-color: #310011;
+    width: 27vw;
+    height: 8vh;
+    /* border: 2px solid white; */
+    color: white;
+    outline: none;
+    font-size: 20px;
+    /* font-weight: bold; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: none; */
+    /* border-radius: 5px; */
+    font-weight: 400;
+
+}
+
+.username {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 1px solid white; */
+    background-color: #310011;
+    /* border-radius: 10px; */
+    width: 556px;
+}
+
+.icon {
+    margin-right: 4px;
+    margin-left: 5px;
+    /* border: 2px solid white; */
+
+}
+
+#eyeicon {
+    display: flex;
+    float: right;
+    align-items: center;
+    /* border: 2px solid white; */
+    height: fit-content;
+    width: fit-content;
+}
+
+.spassword input {
+    background-color: #310011;
+    width: 25vw;
+    height: 8vh;
+    /* border: 2px solid white; */
+    color: white;
+    outline: none;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: none; */
+    /* border-radius: 5px; */
+}
+
+.spassword {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    background-color: #310011;
+    /* border-radius: 10px; */
+    width: 556px;
+}
+
+.firstelementofpassowrd {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.loginbutton {
+    width: 556px;
+    height: 8vh;
+    /* border: 1px solid white; */
+    /* background-color: #310011; */
+    color: white;
+    background: #EF0E6DEB;
+    font-weight: 600;
+    font-size: 20px;
+    /* border: none; */
+    /* border-radius: 10px; */
+}
+
+.rememberme {
+    width: 556px;
+    height: 8vh;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 18px;
+    flex-wrap: wrap;
+
+
+}
+
+.remember {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fsheading {
+    font-weight: 700;
+    font-size: 50px;
+
+
+}
+
+.fscontent {
+    font-weight: 600;
+    font-size: 28px;
+
+}
+
+.fslogin {
+    width: 20vw;
+    height: fit-content;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.line {
+    /* border: 1px solid white; */
+    width: 4vw;
+    height: 0px;
+
+}
+
+.fsloginicon {
+    display: flex;
+    width: 20vw;
+    height: 8vh;
+    /* border: 1px solid white; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.facebookicon {
+    height: 40px;
+    /* border: 1px solid white; */
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 50px; */
+    background: #1877F2;
+    padding: 7px;
+
+}
+
+.googleicon {
+    height: 40px;
+    width: 40px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 50px; */
+    /* background: #1877F2; */
+
+}
+
+.twittericon {
+    height: 40px;
+    width: 40px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 50px; */
+    background: #1877F2;
+    padding: 7px;
+
+}
+
+
+@media only screen and(max-width : 980px){
+    body{
+
+
+
+       
+       
+    }
+}
+
+@media screen and (max-width : 980px) {
+    body{
+
+        .loginwith{
+           /* width: fit-content; */
+           font-size: 15px;
+        }
+
+        .name {
+            height: 9vh;
+            width: 76vw;
+            /* border: 1px solid yellow; */
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-left: 12px;
+            /* background: blue; */
+        }
+        
+    }
+}
+
+@media only screen and (max-width : 1100px) {
+    body {
+        /* background-color: blue;
+       
+       */
+        /* header */
+
+
+        .header {
+            height: 10vh;
+            width: 100vw;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            color: white;
+            margin-top: 3vh;
+            /* font-family: sans-serif; */
+            /* position: fixed; */
+            z-index: 1;
+            position: relative;
+            top: 0px;
+            flex-wrap: wrap;
+        }
+
+        /* body */
+
+        .sbody {
+            /* border: 2px solid white; */
+            width: 100vw;
+            height: 100vh;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        .fsbody {
+            width: 80vw;
+            height: 60vh;
+            border: 2px solid white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            /* line-height: 1.9; */
+            margin-top: 70px;
+            margin-bottom: 0px;
+        }
+
+        .fh{
+            height: fit-content;
+            width: 30vw;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fscontent {
+            font-weight: 600;
+            font-size: 28px;
+            margin-top: 20px;
+        }
+        .fslogin {
+            width: 20vw;
+            height: fit-content;
+            border: 1px solid white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 15px;
+        }
+        
+
+        .facebookicon {
+            height: 37px;
+            border: 1px solid white;
+            width: 37px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border-radius: 50px; */
+            background: #1877F2;
+            padding: 2px;
+        }
+
+
+        .twittericon {
+            height: 37px;
+            width: 37px;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border-radius: 50px; */
+            background: #1877F2;
+            padding: 2px;
+        }
+
+        .fslogin {
+            width: 20vw;
+            height: fit-content;
+            border: 1px solid white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 15px;
+            padding: 5px;
+            font-size: 20px;
+        }
+        .fsloginicon {
+            display: flex;
+            width: 20vw;
+            height: 8vh;
+            border: 1px solid white;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 5px;
+        }
+
+        /* second body  */
+        .ssbody {
+            width: 80vw;
+            height: 70vh;
+            border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            color: white;
+            margin-top: 20px;
+        }
+        
+
+    }
+}
